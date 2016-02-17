@@ -5,15 +5,19 @@
 
   <body>
 
-    {% include header.html %}
-
+    {% if page.title != 'Home' %}
+      {% include header.html %}
+    {% endif %}
+    
     <div class="page-content">
       <div class="wrapper">
         {{ content }}
       </div>
     </div>
 
-    {% include footer.html %}
+    {% if page.title != 'Home' %}
+      {% include footer.html %}
+    {% endif %}
 
   </body>
 

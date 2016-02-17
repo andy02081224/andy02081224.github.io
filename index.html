@@ -1,23 +1,29 @@
 ---
 layout: default
+title: Home
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<ul class="bg-slideshow">
+  <li>
+    <span class="bg-slideshow__image"></span>
+  </li>
+  <li>
+    <span class="bg-slideshow__image"></span>
+  </li>
+  <li>
+    <span class="bg-slideshow__image"></span>
+  </li>
+</ul>
+<div class="content">
+  <header class="home-title">
+    <h2  class="home-title__main">Chen Yu</h2>
+    <p class="home-title__sub">“Hello, World!”</p>
+  </header>
+  <nav class="home-nav">
+    <ul class="">
+      <li class="home-nav__item"><i class="fa fa-fw fa-info-circle"></i>&nbsp;About</li>
+      <li class="home-nav__item"><i class="fa fa-fw fa-pencil-square-o"></i>&nbsp;Blog</li>
+      <li class="home-nav__item"><i class="fa fa-fw fa-github"></i>&nbsp;Github</li>
+      <li class="home-nav__item"><i class="fa fa-fw fa-envelope-o"></i>&nbsp;Contact</li>
+    </ul>
+  </nav>
 </div>
