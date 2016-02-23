@@ -4,6 +4,7 @@
 .site-content {
     min-height: 100%;
     position: relative;
+    padding-top: 65px;
     padding-bottom: 250px;
 }
 
@@ -35,8 +36,12 @@
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
+    background-color: white;
+
     // Positioning context for the mobile navigation icon
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .site-title {
