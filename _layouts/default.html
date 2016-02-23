@@ -2,23 +2,23 @@
 <html>
 
   {% include head.html %}
-
+  
   <body>
-
-    {% if page.title != 'Home' %}
-      {% include header.html %}
-    {% endif %}
-    
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+    <div class="site-content">
+      {% if page.title != 'Home' %}
+        {% include header.html %}
+      {% endif %}
+      
+      <div class="page-content">
+        <div class="wrapper">
+          {{ content }}
+        </div>
       </div>
+
+      {% if page.title != 'Home' %}
+        {% include footer.html %}
+      {% endif %}
     </div>
-
-    {% if page.title != 'Home' %}
-      {% include footer.html %}
-    {% endif %}
-
   </body>
 
 </html>

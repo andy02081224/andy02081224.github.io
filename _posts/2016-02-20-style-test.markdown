@@ -4,6 +4,8 @@ title:  "Style Test"
 date:   2016-02-20 21:56:46 +0800
 categories: jekyll update
 ---
+![Test image](https://www.dropbox.com/s/6eapbdeuh97g5cw/taipei1.jpg?raw=1)
+
 # Dillinger
 
 Dillinger is a cloud-enabled, mobile-ready, offline-storage, AngularJS powered HTML5 Markdown editor.
@@ -121,6 +123,10 @@ Change the path for the nginx conf mounting path to your full path, not mine!
  - Rethink Github Save
  - Add Code Comments
  - Add Night Mode
+
+
+ <p data-height="268" data-theme-id="0" data-slug-hash="YwMRoj" data-default-tab="result" data-user="andy02081224" class='codepen'>See the Pen <a href='http://codepen.io/andy02081224/pen/YwMRoj/'>House</a> by chen.yu (<a href='http://codepen.io/andy02081224'>@andy02081224</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 License
 ----

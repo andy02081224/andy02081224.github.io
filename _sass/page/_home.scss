@@ -14,12 +14,8 @@ $animation-delay: $animation-duration / $fullscreen-bg-length;
 
 $animation-step: round($animation-delay / $animation-duration * 100%);
 
-* {
-  box-sizing: border-box;
+.home-content {
   font-family: 'Vollkorn', sans-serif;
-}
-
-.content {
   position: fixed;
   min-width: 250px;
   margin-left: 3vw;
@@ -74,13 +70,14 @@ $animation-step: round($animation-delay / $animation-duration * 100%);
   
   &__item {
     padding: 8px 0;
-    
+
     &:hover, &:active {
       background-color: darken(rgba(255,255,255,0.6), 50%);
     }
 
     > a {
       color: inherit;
+      display: block;
       text-decoration: none;
     }
   }
@@ -104,6 +101,7 @@ $animation-step: round($animation-delay / $animation-duration * 100%);
     top: 0;
     left: 0;
     opacity: 0;
+    background-color: $peter-river-color;
     background-image: url(#{$fullscreen-bg-1});
     background-repeat: no-repeat;
     background-position: center center;
