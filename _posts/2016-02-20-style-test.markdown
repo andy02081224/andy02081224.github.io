@@ -1,8 +1,10 @@
 ---
 layout: post
-title:  "Style Test"
+title:  "這是一篇測試文章，包含英文和中文"
+description: "只是一個樣式測試"
 date:   2016-02-20 21:56:46 +0800
 categories: jekyll update
+cover_image: https://www.dropbox.com/s/6eapbdeuh97g5cw/taipei1.jpg?raw=1
 ---
 ![Test image](https://www.dropbox.com/s/6eapbdeuh97g5cw/taipei1.jpg?raw=1)
 

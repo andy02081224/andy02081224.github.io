@@ -4,18 +4,38 @@ title: Blog
 permalink: /blog
 ---
 
-<div class="home">
+<div class="blog">
 
   <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <div class="post {%if post.cover_image %}post--with-cover{% endif %}" {%if post.cover_image %} style="background-image: url({{post.cover_image}});" {% endif %}>
+          <header>
+      
+            <div class="post__title">
+              <div class="post__title-main"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
+              <div class="post__title-sub">{{ post.description }}</div>
+            </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+            <div class="post__meta">
+              <div class="post__meta-date">
+                <i class="fa fa-calendar"></i>&nbsp;{{ post.date | date: "%Y-%m-%d" }}
+              </div>
+              <div class="post__meta-tags">
+                <ul>
+                  <li><i class="fa fa-tag"></i>&nbsp;JavaScript</li>   
+                  <li>技術</li>               
+                </ul>
+              </div>
+            </div>
+
+          </header>
+        </div>
+        
+
+       
       </li>
     {% endfor %}
   </ul>

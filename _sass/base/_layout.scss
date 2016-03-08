@@ -1,5 +1,14 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexming.css);
+
 html {
   font-size: 62.5%;
+}
+
+body {
+  font-family: 'cwTeXMing' ,'cwTeXHei', 'cwTeXFangSong', 'Noto Sans TCs', sans-serif;
 }
 
 /* Site content */
@@ -176,16 +185,101 @@ html {
     }
 }
 
+
+
+.post {
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Noto Sans TCs';
+
+    > header {
+        padding: $spacing-unit / 2 $spacing-unit / 2;
+        background-color: rgba($grey-color-dark, 0.7);
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    &--with-cover {
+        height: ($content-width - $spacing-unit  * 4) * (9 / 21);
+    }
+
+    &__title {
+        display: table-cell;
+        vertical-align: top;
+        font-size: 1.2em;
+        padding: 0 0.5em;
+        width: 75%;
+        margin: 0;
+        line-height: 1.2;
+        border-right: 1px solid white;
+
+        &-main {
+            margin-bottom: 0.2em;
+        }
+
+        &-sub {
+          font-size: 0.6em;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+    }
+
+    &__meta {
+        display: table-cell;
+        vertical-align: top;
+        text-align: right;
+        font-size: 0.75em;
+        padding: 0 0.5em;
+        width: 25%;
+    }
+
+    &__meta-date {
+
+    }
+
+    &__meta-tags {
+        ul {
+            list-style: none;
+        }
+    }
+
+    @media screen and (max-width: 960px) {
+        font-size: 1.8rem;
+        &__title {
+            width: 70%;
+        }
+        &__meta {
+            width: 30%;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        &--with-cover {
+            height: 80vw;
+        }
+
+        &__title {
+            border: none;
+            width: 100%;
+        }
+        &__meta {
+            display: none;
+        }
+    }
+
+}
+
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
 }
-
-.post-link {
-    display: block;
-    font-size: 24px;
-}
-
 
 
 /* Posts */
