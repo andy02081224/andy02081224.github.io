@@ -11,7 +11,7 @@ permalink: /blog
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <div class="post {%if post.cover_image %}post--with-cover{% endif %}" {%if post.cover_image %} style="background-image: url({{post.cover_image}});" {% endif %}>
+        <div class="post {%if post.cover_image %}post--with-cover{% endif %} post--{{ post.date | date: "%A" | downcase }}" {%if post.cover_image %} style="background-image: url({{post.cover_image}});" {% endif %}>
           <header>
       
             <div class="post__title">
@@ -25,8 +25,8 @@ permalink: /blog
               </div>
               <div class="post__meta-tags">
                 <ul>
-                  <li><i class="fa fa-tag"></i>&nbsp;JavaScript</li>   
-                  <li>技術</li>               
+                  <li><a href="#"><i class="fa fa-tag"></i>&nbsp;JavaScript</a></li>   
+                  <li><a href="#">技術</a></li>               
                 </ul>
               </div>
             </div>

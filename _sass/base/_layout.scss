@@ -146,10 +146,6 @@ body {
     background-color: $grey-color-dark;
     font-size: 2rem;
 
-    @media screen and (max-width: 450px) {
-        font-size: 1.8rem;
-    }
-
     &__social-icons {
         list-style: none;
         margin: 0;
@@ -163,6 +159,15 @@ body {
             color: inherit;
         }
     }
+
+    @media screen and (max-width: 450px) {
+        font-size: 1.4rem;
+
+        &__social-icons {
+            font-size: 2em;
+        }
+    }
+
 }
 
 
@@ -186,6 +191,15 @@ body {
 }
 
 
+$post-colors: (
+    monday: $alizarin-color,
+    tuesday: $carrot-color,
+    wednesday: $orange-color,
+    thursday: $nephritis,
+    friday: $peter-river-color,
+    saturday: $wisteria-color,
+    sunday: $midnight-blue-color
+);
 
 .post {
     background-position: center center;
@@ -202,6 +216,15 @@ body {
         width: 100%;
     }
 
+    @each $day, $color in $post-colors {
+        &--#{$day}:not(&--with-cover) {
+            header {
+                background-color: $color;
+            }
+        }
+    }
+
+
     &--with-cover {
         height: ($content-width - $spacing-unit  * 4) * (9 / 21);
     }
@@ -210,17 +233,17 @@ body {
         display: table-cell;
         vertical-align: top;
         font-size: 1.2em;
-        padding: 0 0.5em;
+        padding: 5px 10px;
         width: 75%;
         margin: 0;
         line-height: 1.2;
         border-right: 1px solid white;
 
         &-main {
-            margin-bottom: 0.2em;
         }
 
         &-sub {
+          padding: 0.2em 0;
           font-size: 0.6em;
         }
 
@@ -236,7 +259,7 @@ body {
         vertical-align: top;
         text-align: right;
         font-size: 0.75em;
-        padding: 0 0.5em;
+        padding: 5px 10px;
         width: 25%;
     }
 
@@ -247,6 +270,12 @@ body {
     &__meta-tags {
         ul {
             list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            color: inherit;
         }
     }
 
@@ -261,16 +290,24 @@ body {
     }
 
     @media screen and (max-width: 600px) {
+        text-align: center;
         &--with-cover {
             height: 80vw;
         }
 
         &__title {
             border: none;
+            border-bottom: 1px solid white;
             width: 100%;
+            display: block;
         }
         &__meta {
-            display: none;
+            width: 100%;
+            display: block;
+            text-align: inherit;
+            li {
+                display: inline-block;
+            }
         }
     }
 
