@@ -69,67 +69,124 @@ body {
     float: right;
     line-height: 56px;
 
-    .menu-icon {
+    #site-nav__menu-toggle {
         display: none;
     }
 
-    .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
+    &__menu-icon {
+        display: none;
+    }
 
-        // Gaps between nav items, but not on the last one
-        &:not(:last-child) {
-            margin-right: 20px;
+    &__menu {
+        margin: 0;
+        padding: 0;  
+    }
+
+    &__menu-item {
+        list-style: none;
+        display: inline-block;
+
+        > a {
+            padding: 0 $spacing-unit / 2;
+        }
+
+        &:last-child > a {
+            padding-right: 0;
         }
     }
 
     @include media-query($on-palm) {
         position: absolute;
-        top: 9px;
+        top: 8px;
         right: $spacing-unit / 2;
+        width: 36px;
+        height: 40px;
         background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
 
-        .menu-icon {
+        &__menu-icon, &__menu-icon::before, &__menu-icon::after {
+            position: absolute;
             display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
+            border-radius: 3px;
+            width: 30px;
+            height: 4px;
+            transition: all 0.3s ease-in-out;
         }
 
-        .trigger {
+        &__menu-icon {
+            height: 40px;
+            cursor: pointer;
+            background-image: linear-gradient(
+              to bottom,
+              white,
+              white 45%,
+              black 45%,
+              black 55%,
+              white 55%,
+              white 100%
+            );
+        }
+
+        &__menu-icon::before {
+            background-color: black;
+            content: '';
+            top: 8px;
+        }
+
+        &__menu-icon::after {
+            content: '';
+            background-color: black;
+            bottom: 8px;
+        }
+
+        &__menu {
+            position: fixed;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out;
+            left: 0;
+            top: 62px;
+            width: 100%;
             clear: both;
-            display: none;
+            display: block;
+            background-color: white;
         }
 
-        &:hover .trigger {
+        &__menu-item {
             display: block;
-            padding-bottom: 5px;
-        }
 
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-
-            &:not(:last-child) {
-                margin-right: 0;
+            &:last-child {
+                border-bottom: 1px solid $grey-color-dark;
             }
-            margin-left: 20px;
+
+            > a {
+                display: block;
+                padding: 0 $spacing-unit / 2;
+            }
+
+            > a:hover {
+                text-decoration: none;
+                background-color: $grey-color-light;
+            }
         }
+
+
+        #site-nav__menu-toggle:checked + &__menu-icon {
+            background-image: none;
+        }
+
+        #site-nav__menu-toggle:checked + &__menu-icon::before {
+            top: 18px;
+            transform: rotate(45deg);
+        }
+
+        #site-nav__menu-toggle:checked + &__menu-icon::after {
+            bottom: 18px;
+            transform: rotate(-45deg);
+        }
+
+        #site-nav__menu-toggle:checked ~ &__menu {
+            transform: translateX(0);
+        }
+
     }
 }
 
