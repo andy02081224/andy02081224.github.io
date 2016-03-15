@@ -6,11 +6,14 @@ permalink: /blog
 
 <div class="blog">
 
-  <h1 class="page-heading">Posts</h1>
+  <header class="page-header">
+    <h3 class="page-header__subtitle">Posts</h3>
+  </header>
 
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
+      
         <div class="post {%if post.cover_image %}post--with-cover{% endif %} post--{{ post.date | date: "%A" | downcase }}" {%if post.cover_image %} style="background-image: url({{post.cover_image}});" {% endif %}>
           <header>
       
@@ -33,8 +36,6 @@ permalink: /blog
 
           </header>
         </div>
-        
-
        
       </li>
     {% endfor %}

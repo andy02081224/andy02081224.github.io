@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 @import url(http://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
 @import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
 @import url(http://fonts.googleapis.com/earlyaccess/cwtexming.css);
@@ -8,7 +9,8 @@ html {
 }
 
 body {
-  font-family: 'cwTeXMing' ,'cwTeXHei', 'cwTeXFangSong', 'Noto Sans TCs', sans-serif;
+  font-family: 'cwTeXMing', serif;
+  font-family: 'Noto Sans TCs', 'Noto Sans', sans-serif;
 }
 
 /* Site content */
@@ -39,6 +41,7 @@ body {
 
 /* Site header */
 .site-header {
+    font-family: 'Noto Sans TCs', 'Noto Sans', sans-serif;
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
@@ -87,8 +90,15 @@ body {
         display: inline-block;
 
         > a {
-            padding: 0 $spacing-unit / 2;
+            color: inherit;
+            margin: 0 $spacing-unit / 2;
+            text-decoration: none;
         }
+
+        > a:hover {
+            border-bottom: 3px solid $midnight-blue-color;
+        }
+
 
         &:last-child > a {
             padding-right: 0;
@@ -159,10 +169,11 @@ body {
 
             > a {
                 display: block;
+                margin: 0;
                 padding: 0 $spacing-unit / 2;
             }
 
-            > a:hover {
+            > a:hover, > a:active {
                 text-decoration: none;
                 background-color: $grey-color-light;
             }
@@ -195,6 +206,7 @@ body {
 
 /* Site footer */
 .site-footer {
+    font-family: 'Noto Sans TCs', 'Noto Sans', sans-serif;
     color: white;
     position: absolute;
     bottom: 0;
@@ -228,16 +240,28 @@ body {
 }
 
 
+/* General page content */
+.page-header {
+    font-family: 'Noto Sans TCs', 'Noto Sans', sans-serif;
 
-/* Page content */
+    &__title {
+        margin-bottom: 0;
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+
+    &__subtitle {
+        font-size: 1.8rem;
+    }
+}
+
 .page-content {
+    font-size: 1.5rem;
     padding: $spacing-unit 0;
 }
 
-.page-heading {
-    font-size: 20px;
-}
 
+/* blog home page */
 .post-list {
     margin-left: 0;
     list-style: none;
@@ -376,8 +400,9 @@ $post-colors: (
 }
 
 
-/* Posts */
+/* Individual post */
 .post-header {
+    font-family: 'Noto Sans TCs', 'Noto Sans', sans-serif;
     margin-bottom: $spacing-unit;
 }
 
@@ -393,6 +418,7 @@ $post-colors: (
 
 .post-content {
     margin-bottom: $spacing-unit;
+    font-size: 1.5rem;
 
     h2 {
         font-size: 32px;

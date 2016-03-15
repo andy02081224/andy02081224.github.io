@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>32</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="32" sketch:type="MSArtboardGroup">
+            <circle id="Oval-1" stroke="#4990E2" stroke-width="3" fill="#4990E2" sketch:type="MSShapeGroup" cx="16" cy="16" r="14"></circle>
+            <path d="M8,8 L14.5156097,14.5156097" id="Line" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" sketch:type="MSShapeGroup"></path>
+            <path d="M24,8 L7,24" id="Line" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" sketch:type="MSShapeGroup"></path>
+            <path d="M7,24 L25,24" id="Line" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
