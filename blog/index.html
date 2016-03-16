@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Blog
-permalink: /blog
 ---
 
 <div class="blog">
@@ -24,12 +23,13 @@ permalink: /blog
 
             <div class="post__meta">
               <div class="post__meta-date">
-                <i class="fa fa-calendar"></i>&nbsp;{{ post.date | date: "%Y-%m-%d" }}
+                <i class="fa fa-clock-o"></i>&nbsp;{{ post.date | date: "%Y-%m-%d" }}
               </div>
-              <div class="post__meta-tags">
+              <div class="post__meta-category">
                 <ul>
-                  <li><a href="#"><i class="fa fa-tag"></i>&nbsp;JavaScript</a></li>   
-                  <li><a href="#">技術</a></li>               
+                {% for category in post.categories %}
+                  <li><i class="fa fa-folder-open-o"></i>&nbsp;<a href="/blog/category/{{category}}">{{ category }}</a></li>
+                {% endfor %}                  
                 </ul>
               </div>
             </div>
