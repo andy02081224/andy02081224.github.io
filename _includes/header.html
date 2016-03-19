@@ -11,7 +11,7 @@
 
       <ul class="site-nav__menu">
         {% for page in site.pages %}
-          {% if page.title and page.layout != 'category' %}
+          {% if page.title and page.layout != 'filter' %}
           <li class="site-nav__menu-item"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
           {% endif %}
         {% endfor %}

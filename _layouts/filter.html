@@ -1,0 +1,14 @@
+--- 
+layout: page 
+---
+
+<ul class="posts-by-filter">
+  {% for post in site[page.type][page.filter] %}
+  <li class="posts-by-filter__post">
+    <a href="{{ post.url }}/">
+		<div class="posts-by-filter__post-title">{{ post.title }}</div>
+		<div class="posts-by-filter__post-date">{{ post.date | date: "%Y-%m-%d" }}</div>
+		</a>
+  </li>
+  {% endfor %}
+</ul>
