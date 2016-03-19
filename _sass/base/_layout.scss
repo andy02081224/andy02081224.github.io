@@ -282,7 +282,19 @@ $post-colors: (
     sunday: $midnight-blue-color
 );
 
-.post {
+@each $day, $color in $post-colors {
+    .post--#{$day}:not(.post--with-cover) {
+        header {
+            background-color: $color;
+        }
+    }
+}
+
+.post--with-cover {
+    height: ($content-width - $spacing-unit  * 4) * (9 / 21);
+}
+
+.post.post--list {
     background-position: center center;
     background-size: cover;
     color: white;
@@ -291,26 +303,16 @@ $post-colors: (
 
     > header {
         padding: $spacing-unit / 2 $spacing-unit / 2;
-        background-color: rgba($grey-color-dark, 0.7);
         display: table;
         table-layout: fixed;
         width: 100%;
     }
 
-    @each $day, $color in $post-colors {
-        &--#{$day}:not(&--with-cover) {
-            header {
-                background-color: $color;
-            }
-        }
+    &.post--with-cover > header {
+        background-color: rgba($grey-color-dark, 0.7);
     }
 
-
-    &--with-cover {
-        height: ($content-width - $spacing-unit  * 4) * (9 / 21);
-    }
-
-    &__title {
+    .post__title {
         display: table-cell;
         vertical-align: top;
         font-size: 1.2em;
@@ -335,7 +337,7 @@ $post-colors: (
 
     }
 
-    &__meta {
+    .post__meta {
         display: table-cell;
         vertical-align: top;
         text-align: right;
@@ -344,11 +346,11 @@ $post-colors: (
         width: 25%;
     }
 
-    &__meta-date {
+    .post__meta-date {
 
     }
 
-    &__meta-category {
+    .post__meta-category {
         ul {
             list-style: none;
             margin: 0;
@@ -362,27 +364,27 @@ $post-colors: (
 
     @media screen and (max-width: 960px) {
         font-size: 1.8rem;
-        &__title {
+        .post__title {
             width: 70%;
         }
-        &__meta {
+        .post__meta {
             width: 30%;
         }
     }
 
     @media screen and (max-width: 600px) {
         text-align: center;
-        &--with-cover {
+        .post--with-cover {
             height: 80vw;
         }
 
-        &__title {
+        .post__title {
             border: none;
             border-bottom: 1px solid white;
             width: 100%;
             display: block;
         }
-        &__meta {
+        .post__meta {
             width: 100%;
             display: block;
             text-align: inherit;
@@ -394,54 +396,37 @@ $post-colors: (
 
 }
 
-.post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
-}
-
 
 /* Individual post */
-.post-header {
-    font-family: 'Noto Sans TCs', 'Noto Sans', sans-serif;
-    margin-bottom: $spacing-unit;
-}
-
-.post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
+.post.post--single {
+    .post__header {
+        font-family: 'Noto Sans TCs', 'Noto Sans', sans-serif;
+        margin-bottom: $spacing-unit;
     }
-}
 
-.post-content {
-    margin-bottom: $spacing-unit;
-    font-size: 1.5rem;
-
-    h2 {
-        font-size: 32px;
+    .post__title {
+        font-size: 42px;
+        letter-spacing: -1px;
+        line-height: 1;
 
         @include media-query($on-laptop) {
-            font-size: 28px;
+            font-size: 36px;
         }
     }
 
-    h3 {
-        font-size: 26px;
+    .post__meta {
+        font-size: 1.5rem;
+        color: $grey-color;
 
-        @include media-query($on-laptop) {
-            font-size: 22px;
+        span:not(:last-child)::after {
+            content: ',\00a0';
         }
     }
 
-    h4 {
-        font-size: 20px;
 
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
+    .post-content {
+        margin-bottom: $spacing-unit;
+        font-size: 1.5rem;
     }
 }
 

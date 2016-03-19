@@ -13,7 +13,7 @@ title: Blog
     {% for post in site.posts %}
       <li>
       
-        <div class="post {%if post.cover_image %}post--with-cover{% endif %} post--{{ post.date | date: "%A" | downcase }}" {%if post.cover_image %} style="background-image: url({{post.cover_image}});" {% endif %}>
+        <div class="post post--list {%if post.cover_image %}post--with-cover{% endif %} post--{{ post.date | date: "%A" | downcase }}" {%if post.cover_image %} style="background-image: url({{post.cover_image}});" {% endif %}>
           <header>
       
             <div class="post__title">
@@ -23,7 +23,7 @@ title: Blog
 
             <div class="post__meta">
               <div class="post__meta-date">
-                <i class="fa fa-clock-o"></i>&nbsp;{{ post.date | date: "%Y-%m-%d" }}
+                <i class="fa fa-clock-o"></i>&nbsp;<time>{{ post.date | date: "%m-%d, %Y" }}</time>
               </div>
               <div class="post__meta-category">
                 <ul>
