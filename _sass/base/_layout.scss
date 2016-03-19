@@ -9,7 +9,6 @@ html {
 }
 
 body {
-  font-family: 'cwTeXMing', serif;
   font-family: 'Noto Sans TCs', 'Noto Sans', sans-serif;
 }
 
@@ -42,7 +41,6 @@ body {
 
 /* Site header */
 .site-header {
-    font-family: 'Noto Sans TCs', 'Noto Sans', sans-serif;
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
@@ -212,7 +210,6 @@ body {
 
 /* Site footer */
 .site-footer {
-    font-family: 'Noto Sans TCs', 'Noto Sans', sans-serif;
     color: white;
     position: absolute;
     bottom: 0;
@@ -248,8 +245,6 @@ body {
 
 /* General page content */
 .page-header {
-    font-family: 'Noto Sans TCs', 'Noto Sans', sans-serif;
-
     &__title {
         margin-bottom: 0;
         font-size: 3rem;
@@ -305,7 +300,6 @@ $post-colors: (
     background-size: cover;
     color: white;
     font-size: 2rem;
-    font-family: 'Noto Sans TCs';
 
     > header {
         padding: $spacing-unit / 2 $spacing-unit / 2;
@@ -405,7 +399,6 @@ $post-colors: (
 .post.post--single {
     font-size: 2rem;
     .post__header {
-        font-family: 'Noto Sans TCs', 'Noto Sans', sans-serif;
         margin-bottom: $spacing-unit;
     }
 
