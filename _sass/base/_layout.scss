@@ -62,6 +62,10 @@ body {
     margin-bottom: 0;
     float: left;
 
+    &:hover {
+        text-decoration: none;
+    }
+
     &,
     &:visited {
         color: $grey-color-dark;
@@ -322,9 +326,6 @@ $post-colors: (
         line-height: 1.2;
         border-right: 1px solid white;
 
-        &-main {
-        }
-
         &-sub {
           padding: 0.2em 0;
           font-size: 0.6em;
@@ -334,7 +335,6 @@ $post-colors: (
             text-decoration: none;
             color: white;
         }
-
     }
 
     .post__meta {
@@ -426,7 +426,7 @@ $post-colors: (
 
     .post-content {
         margin-bottom: $spacing-unit;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 }
 

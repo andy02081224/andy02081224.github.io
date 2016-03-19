@@ -5,7 +5,7 @@ description: "只是一個樣式測試"
 date:   2016-02-20 21:56:46 +0800
 category: 技術
 cover_image: https://www.dropbox.com/s/6eapbdeuh97g5cw/taipei1.jpg?raw=1
-tags: ['JavaScript', '技術']
+tags: ['JavaScript']
 ---
 ![Test image](https://www.dropbox.com/s/6eapbdeuh97g5cw/taipei1.jpg?raw=1)
 
@@ -49,12 +49,18 @@ Dillinger uses a number of open source projects to work properly:
 And of course Dillinger itself is open source with a [public repository][dill]
  on GitHub.
 
- ```javascript
+``` javascript
 function test() {
   var a = 'test';
   console.log('this is a test: ', a);
 }
- ```
+
+(function() {
+  return Promise((resolve, reject) => {
+    setTimeout(() => resolve('test'), 1000);
+  });
+})()
+```
 
 ### Installation
 
@@ -89,11 +95,10 @@ Readmes, how to use them in your own application can be found here:
 * [plugins/onedrive/README.md] [PlOd]
 
 ### Development
-
-Want to contribute? Great!
-
 Dillinger uses Gulp + Webpack for fast developing.
 Make a change in your file and instantanously see your updates!
+
+<script src="https://gist.github.com/andy02081224/2a73a8d6c9e36fb6efdf.js"></script>
 
 Open your favorite Terminal and run these commands.
 
