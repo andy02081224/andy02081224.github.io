@@ -18,7 +18,7 @@ body {
     min-height: 100%;
     position: relative;
     padding-top: 65px;
-    padding-bottom: 250px;
+    padding-bottom: 150px;
 }
 
 
@@ -29,6 +29,7 @@ body {
     margin-left: auto;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
+    overflow-x: hidden;
     @extend %clearfix;
 
     @include media-query($on-laptop) {
@@ -168,7 +169,7 @@ body {
             display: block;
 
             &:last-child {
-                border-bottom: 1px solid $grey-color-dark;
+                border-bottom: 1px solid $grey-color-light;
             }
 
             > a {
@@ -179,6 +180,7 @@ body {
 
             > a:hover, > a:active {
                 text-decoration: none;
+                border: none;
                 background-color: $grey-color-light;
             }
         }
@@ -319,7 +321,7 @@ $post-colors: (
     .post__title {
         display: table-cell;
         vertical-align: top;
-        font-size: 1.2em;
+        font-size: 1.1em;
         padding: 5px 10px;
         width: 75%;
         margin: 0;
@@ -374,7 +376,7 @@ $post-colors: (
 
     @media screen and (max-width: 600px) {
         text-align: center;
-        .post--with-cover {
+        &.post--with-cover {
             height: 80vw;
         }
 
@@ -383,11 +385,13 @@ $post-colors: (
             border-bottom: 1px solid white;
             width: 100%;
             display: block;
+            padding: 5px 0;
         }
         .post__meta {
             width: 100%;
             display: block;
             text-align: inherit;
+            padding: 5px 0;
             li {
                 display: inline-block;
             }
@@ -399,23 +403,20 @@ $post-colors: (
 
 /* Individual post */
 .post.post--single {
+    font-size: 2rem;
     .post__header {
         font-family: 'Noto Sans TCs', 'Noto Sans', sans-serif;
         margin-bottom: $spacing-unit;
     }
 
     .post__title {
-        font-size: 42px;
+        font-size: 1.5em;
         letter-spacing: -1px;
         line-height: 1;
-
-        @include media-query($on-laptop) {
-            font-size: 36px;
-        }
     }
 
     .post__meta {
-        font-size: 1.5rem;
+        font-size: 0.75em;
         color: $grey-color;
 
         span:not(:last-child)::after {
@@ -426,7 +427,7 @@ $post-colors: (
 
     .post-content {
         margin-bottom: $spacing-unit;
-        font-size: 1.6rem;
+        font-size: 0.9em;
     }
 }
 
