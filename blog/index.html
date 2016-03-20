@@ -17,7 +17,7 @@ title: Blog
       
             <div class="post__title">
               <div class="post__title-main"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
-              <div class="post__title-sub">{{ post.description }}</div>
+              {% if post.subtitle %}<div class="post__title-sub">{{ post.subtitle }}</div>{% endif %}
             </div>
 
             <div class="post__meta">
