@@ -55,21 +55,25 @@ prose:
           element: "text"
           label: "標題*"
           type: text
-      - name: subtitle
+      - name: "subtitle"
+        field:
           element: "text"
           label: "副標題"
           type: text
       - name: cover_image
+        field:
           element: "text"
           label: "封面圖片(路徑)"
           type: text
       - name: category
+        field:
           element: select
           label: "分類"
           options: 
             - "技術"
             - "murmur"
       - name: tags
+        field:
           element: multiselect
           label: "標籤"
           options:
