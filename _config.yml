@@ -23,3 +23,64 @@ kramdown:
   input: GFM
 
 markdown_ext:  markdown,mkdown,mkdn,mkd,md
+
+# Prose settings
+prose:
+  siteurl: 'https://www.andyteki.com'
+  media: 'img'
+  ignore:
+    - /_includes
+    - /_layouts
+    - /_sass
+    - /css
+    - /js
+    - .gitignore
+    - _config.yml
+    - index.html
+    - CNAME 
+    - apple-touch-icon.png
+    - bs-config.js
+    - favicon-32x32.png
+    - favicon-96x96.png
+    - favicon.ico
+    - feed.xml
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "標題*"
+          type: text
+      - name: subtitle
+          element: "text"
+          label: "副標題"
+          type: text
+      - name: cover_image
+          element: "text"
+          label: "封面圖片(路徑)"
+          type: text
+      - name: category
+          element: select
+          label: "分類"
+          options: 
+            - "技術"
+            - "murmur"
+      - name: tags
+          element: multiselect
+          label: "標籤"
+          options:
+            - "HTML"
+            - "CSS"
+            - "JavaScript"
+            # - "工具"
+            # - "Node"
+            # - "React"
+            # - "語言"
+            # - "資料庫"
+            # - "Jekyll"
+            # - "職涯"
+            # - "設計"
