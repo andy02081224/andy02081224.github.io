@@ -72,6 +72,11 @@ prose:
           options: 
             - "技術"
             - "murmur"
+      - name: published
+        field:
+          element: checkbox
+          label: "發布"
+          value: true
       - name: tags
         field:
           element: multiselect
