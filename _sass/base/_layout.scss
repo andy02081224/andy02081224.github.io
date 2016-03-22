@@ -454,4 +454,17 @@ $post-colors: (
     }
 }
 
+/* Paginator */
+.paginator {
+    overflow: hidden;
+
+    &__previous {
+        float: left;
+    }
+
+    &__next {
+        float: right;
+    }
+}
+
 

@@ -12,10 +12,9 @@ description: > # this means to ignore newlines until "baseurl:"
   Chen Yu的個人網站
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.andyteki.com" # the base hostname & protocol for your site
-codepen_username: andy02081224
-github_username:  andy02081224
-homepage_title: Chen Yu
-homepage_subtitle: Just wanna write something here
+gems: [jekyll-paginate]
+paginate: 5
+paginate_path: "/blog/page:num/"
 
 # Build settings
 markdown: kramdown
@@ -93,3 +92,9 @@ prose:
             # - "Jekyll"
             # - "職涯"
             # - "設計"
+            
+# Custom data
+codepen_username: andy02081224
+github_username:  andy02081224
+homepage_title: Chen Yu
+homepage_subtitle: Just wanna write something here

@@ -10,7 +10,7 @@ title: Blog
   </header>
 
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
       <li>
         <div class="post post--list {%if post.cover_image %}post--with-cover{% endif %} post--{{ post.date | date: "%A" | downcase }}" {%if post.cover_image %} style="background-image: url({{post.cover_image}});" {% endif %}>
           <header>
@@ -32,11 +32,10 @@ title: Blog
                 </ul>
               </div>
             </div>
-
           </header>
         </div>
       </li>
     {% endfor %}
   </ul>
-
+  {% include paginator.html %}
 </div>
