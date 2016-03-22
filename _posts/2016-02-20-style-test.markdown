@@ -1,12 +1,15 @@
 ---
 layout: post
-title:  "這是一篇測試文章，包含英文和中文"
-subtitle: "只是一個樣式測試"
-date:   2016-02-20 21:56:46 +0800
+title: 這是一篇測試文章，包含英文和中文
+subtitle: 只是一個樣式測試
+date: "2016-02-20 21:56:46 +0800"
 category: 技術
-cover_image: https://www.dropbox.com/s/6eapbdeuh97g5cw/taipei1.jpg?raw=1
-tags: ['JavaScript']
+cover_image: "https://www.dropbox.com/s/6eapbdeuh97g5cw/taipei1.jpg?raw=1"
+tags: 
+  - JavaScript
+published: false
 ---
+
 ![Test image](https://www.dropbox.com/s/6eapbdeuh97g5cw/taipei1.jpg?raw=1)
 
 # Dillinger
@@ -167,5 +170,3 @@ MIT
    [PlGh]:  <https://github.com/joemccann/dillinger/tree/master/plugins/github/README.md>
    [PlGd]: <https://github.com/joemccann/dillinger/tree/master/plugins/googledrive/README.md>
    [PlOd]: <https://github.com/joemccann/dillinger/tree/master/plugins/onedrive/README.md>
-
-
