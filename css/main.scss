@@ -3,14 +3,14 @@
 ---
 @charset "utf-8";
 
-// Import partials from `sass_dir` (defaults to `_sass`)
 @import "global/variables";
 @import "global/mixins";
+
+@import "vendor/github-markdown";
 
 @import "base/util";
 @import "base/reset";
 @import "base/layout";
-// @import "base/syntax-highlighting";
 @import "base/syntax";
 
 @import "page/home";
