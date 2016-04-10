@@ -12,7 +12,7 @@ title: Blog
   <ul class="post-list">
     {% for post in paginator.posts %}
       <li>
-        <div class="post post--list {%if post.cover_image %}post--with-cover{% endif %} post--{{ post.date | date: "%A" | downcase }}" {%if post.cover_image %} style="background-image: url({{post.cover_image}});" {% endif %}>
+        <div class="post post--list {%if post.cover_image and post.cover_image != '' %}post--with-cover{% endif %} post--{{ post.date | date: "%A" | downcase }}" {%if post.cover_image %} style="background-image: url({{post.cover_image}});" {% endif %}>
           <header>
       
             <div class="post__title">
