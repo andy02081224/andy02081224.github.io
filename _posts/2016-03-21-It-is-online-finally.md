@@ -2,7 +2,7 @@
 layout: post
 subtitle: ""
 cover_image: "/img/homepage-screenshot.jpg"
-category: murmur
+category: Murmur
 published: true
 tags: 
   - "null"

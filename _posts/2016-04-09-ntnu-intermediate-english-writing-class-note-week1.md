@@ -2,10 +2,10 @@
 layout: post
 subtitle: ""
 cover_image: ""
-category: murmur
+category: Language
 published: true
 tags: 
-  - "null"
+  - "English"
 title: 師大英文寫作課程基礎班筆記Week1
 ---
 
@@ -13,6 +13,7 @@ title: 師大英文寫作課程基礎班筆記Week1
 
 
 # 句子部分
+
 
 在英文當中主要有四種句子，分別是：
 
