@@ -2,12 +2,13 @@
 layout: post
 subtitle: ""
 cover_image: ""
-category: 技術
+category: murmur
 published: true
 tags: 
   - "null"
 title: 師大英文寫作課程基礎班筆記Week1
 ---
+
 
 
 
@@ -42,6 +43,7 @@ title: 師大英文寫作課程基礎班筆記Week1
 公式：S + V, 對等連接詞 S + V.
 
 範例：
+
 1. Russia is the largest country in the world, yet it has relatively small population.
 2. My dream is to become a professional basketball player, so I practice every day.
 3. I am bad at math, nor do I good at History.
@@ -53,6 +55,7 @@ title: 師大英文寫作課程基礎班筆記Week1
 公式：S + V; 連接性副詞, S + V.
 
 範例：
+
 1. My japanese is improving; for example, I can watch Japanese animations without subtitiles.
 2. It is very cold outside; still, people go out to see the snow.
 3. Many users are reporting screen quality issues on the new iPhone; still, the first batch of the iPhone has already sold out.
@@ -88,6 +91,7 @@ title: 師大英文寫作課程基礎班筆記Week1
 
 定義：複合複雜句由兩個或以上個獨立子句(複合)以及只少一個從屬子句構成(複雜)
 範例：
+
 1. I really want to play the HTC Vive that is just released, but it’s out of my budget.
 
 I really want to play the HTC Vive => 第一個獨立子句
@@ -109,10 +113,3 @@ but it’s out of my budget => 第二個獨立子句
 
 # 附註
 [1]Clauses: finite and non-finite: [Link1](http://dictionary.cambridge.org/zht/%E8%AA%9E%E6%B3%95/%E8%8B%B1%E5%BC%8F%E8%AA%9E%E6%B3%95/clauses-finite-and-non-finite), [Link2](http://www.grammar-quizzes.com/8-12.html)
-
-
-
-
-
-
-
