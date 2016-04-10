@@ -2,12 +2,13 @@
 layout: post
 subtitle: ""
 cover_image: ""
-category: Language
+category: 技術
 published: true
 tags: 
-  - "English"
+  - English
 title: 師大英文寫作課程基礎班筆記Week1
 ---
+
 
 
 
@@ -15,7 +16,7 @@ title: 師大英文寫作課程基礎班筆記Week1
 ## 句子部分
 
 
-在英文當中主要有四種句子，分別是：
+在英文當中主要有四種句子，分別是：  
 1. Simple sentence 簡單句
 2. Compound sentence 複合句
 3. Complex sentence 複雜句
@@ -27,8 +28,7 @@ title: 師大英文寫作課程基礎班筆記Week1
 
 公式：Ｓ＋Ｖ
 
-範例：
-
+範例：  
 1. I love you.
 2. How old are you?
 3. He speaks English fluently.
@@ -43,8 +43,7 @@ title: 師大英文寫作課程基礎班筆記Week1
 
 公式：S + V, 對等連接詞 S + V.
 
-範例：
-
+範例：  
 1. Russia is the largest country in the world, yet it has relatively small population.
 2. My dream is to become a professional basketball player, so I practice every day.
 3. I am bad at math, nor do I good at History.
@@ -55,8 +54,7 @@ title: 師大英文寫作課程基礎班筆記Week1
 
 公式：S + V; 連接性副詞, S + V.
 
-範例：
-
+範例：  
 1. My japanese is improving; for example, I can watch Japanese animations without subtitiles.
 2. It is very cold outside; still, people go out to see the snow.
 3. Many users are reporting screen quality issues on the new iPhone; still, the first batch of the iPhone has already sold out.
@@ -64,12 +62,12 @@ title: 師大英文寫作課程基礎班筆記Week1
 
 
 **分號Semicolons**
+
 兩個獨立子句之間透過分號連接，彼此之間的因果關係須明確。
 
 公式：S + V; S + V.
 
-範例：
-
+範例：  
 1. I am going to Japan this weekend; I heard that it is one of the most beautiful country in the world.
 2. I want to study in the USA; I am working hard every day;
 
@@ -81,8 +79,7 @@ title: 師大英文寫作課程基礎班筆記Week1
 (附屬子句在前，獨立子句在後)附屬連接詞 + S + V, S + V
 (獨立子句在前，附屬子句在後)S + V 附屬連接詞 S + V
 
-範例：
-
+範例：  
 1. Since we almost run out of gas, we have to find a gas station as soon as possible.
 2. The iPhone remains world's best-selling phone although the price is high.
 3. I am afraid to go to the bathroom after watching a scary movie. (= I am afraid to go to the bathroom after I watch a scary movie[1]) 
@@ -92,8 +89,7 @@ title: 師大英文寫作課程基礎班筆記Week1
 
 定義：複合複雜句由兩個或以上個獨立子句(複合)以及只少一個從屬子句構成(複雜)。
 
-範例：
-
+範例：  
 1. I really want to play the HTC Vive that is just released, but it’s out of my budget.
 
 I really want to play the HTC Vive => 第一個獨立子句
@@ -109,8 +105,5 @@ but it’s out of my budget => 第二個獨立子句
 5. [The Compound-Complex Sentence](http://www.english-grammar-revolution.com/compound-complex-sentence.html)
 
 
-
-
 ## 附註
 [1]Clauses: finite and non-finite: [Link1](http://dictionary.cambridge.org/zht/%E8%AA%9E%E6%B3%95/%E8%8B%B1%E5%BC%8F%E8%AA%9E%E6%B3%95/clauses-finite-and-non-finite), [Link2](http://www.grammar-quizzes.com/8-12.html)
-
