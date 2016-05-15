@@ -3,15 +3,22 @@
 ---
 @charset "utf-8";
 
+/* global */
 @import "global/variables";
 @import "global/mixins";
 
-@import "vendor/github-markdown";
+/* vendors */
+@import "vendors/github-markdown";
+@import "vendors/normalize";
 
+/* base */
+@import "base/base";
 @import "base/util";
-@import "base/reset";
-@import "base/layout";
 @import "base/syntax";
 
-@import "page/home";
+/* layout */
+@import "layout/layout";
+
+/* pages */
+@import "pages/home";
 

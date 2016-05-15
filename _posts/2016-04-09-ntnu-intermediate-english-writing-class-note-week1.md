@@ -2,7 +2,7 @@
 layout: post
 subtitle: ""
 cover_image: ""
-category: 技術
+category: Language
 published: true
 tags: 
   - English

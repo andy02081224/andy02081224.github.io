@@ -56,6 +56,7 @@ body {
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
+    text-decoration: none;
     float: left;
 
     &:hover {
@@ -71,6 +72,7 @@ body {
 .site-nav {
     float: right;
     line-height: 56px;
+    font-size: 1.4rem;
 
     #site-nav__menu-toggle {
         display: none;
@@ -218,6 +220,7 @@ body {
     &__social-icons {
         list-style: none;
         margin: 0;
+        padding: 0;
 
         > li {
             display: inline-block;
@@ -261,7 +264,8 @@ body {
 
 /* blog home page */
 .post-list {
-    margin-left: 0;
+    margin: 0;
+    padding: 0;
     list-style: none;
 
     > li {

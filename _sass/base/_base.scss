@@ -1,0 +1,13 @@
+* {
+	box-sizing: border-box;
+}
+
+ol {
+    padding: 0;
+}
+
+ol li {
+    list-style-type: decimal; /* or 'decimal-leading-zero', 'upper-alpha', 'lower-alpha'... */
+    list-style-position: inside; /* or 'inside' */
+    //margin-left: 1em; /* gives 'room' for the numbers to appear in */
+}
