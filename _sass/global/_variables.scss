@@ -32,3 +32,15 @@ $asbestos-color: #7f8c8d;
 /* media query breakpoints */
 $on-palm:          600px;
 $on-laptop:        800px;
+
+/* mq */
+$mq-breakpoints: (
+    mobile:  320px,
+    tablet:  740px,
+    desktop: 980px,
+    wide:    1300px,
+
+    // Tweakpoints
+    smallMoile: 320px,
+    bigMobile: 414px
+);

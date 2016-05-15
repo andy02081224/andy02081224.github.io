@@ -6,6 +6,7 @@
 	background-color: skyblue;
 	background-image: url("https://www.dropbox.com/s/ojusm0xfckwagkp/pathway-1080p.jpg?raw=1");
 	background-size: cover;
+	background-position: center center;
 }
 
 .home-content {
@@ -23,21 +24,35 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	background-color: rgba(#000, 0.45);
+
+	@include mq($until: bigMobile) {
+		left: 0;
+		top: -90%;
+		transform: none;
+		right: 10%;
+	}
 }
 
 .home-subtitle {
 	font-size: 1.4rem;
 	position: absolute;
-	bottom: 20%;
+	bottom: 10%;
 	left: 50%;
 	transform: translateX(-50%);
+
+	@include mq($until: bigMobile) {
+		bottom: 3%;
+		left: auto;
+		right: 10%;
+		transform: none;
+	}
 }
 
 .home-nav {
 	font-size: 2rem;
 	text-align: center;
 	position: relative;
-	top: 40%;
+	top: 30%;
 
 	> ul {
 		list-style: none;
@@ -49,6 +64,7 @@
 		line-height: 1;
 		display: inline-block;
 		padding: 0 20px;
+		margin-bottom: 10px;
 	}
 
 	a {
@@ -56,11 +72,31 @@
 		text-decoration: none;
 	}
 
-	a:hover {
+	a:hover{
 		color: darken($grey-color-light, 35%);
 	}
 
 	li:not(:last-child) {
 		border-right: 1px solid darken($grey-color-light, 30%);
+	}
+
+	@include mq($until: bigMobile) {
+		text-align: left;
+		border: 1px solid darken($grey-color-light, 40%);
+		display: inline-block;
+		top: -50%;
+		background-color: rgba(#FFF, 0.5);
+		left: 25px;
+
+		li {
+			display: block;
+			padding: 20px 25px;
+			margin: 0;
+		}
+		
+		li:not(:last-child) {
+			border: none;
+		}
+
 	}
 }
