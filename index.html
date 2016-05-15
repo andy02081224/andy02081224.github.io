@@ -2,29 +2,28 @@
 layout: default
 title: Home
 ---
-<ul class="bg-slideshow">
-  <li>
-    <span class="bg-slideshow__image"></span>
-  </li>
-  <li>
-    <span class="bg-slideshow__image"></span>
-  </li>
-  <li>
-    <span class="bg-slideshow__image"></span>
-  </li>
-</ul>
-<div class="home-content">
-  <header class="home-title">
-    <h2  class="home-title__main">{{ site.homepage_title }}</h2>
-    <p class="home-title__sub">{{ site.homepage_subtitle }}</p>
-  </header>
-  <nav class="home-nav">
-    <ul class="">
-      <li class="home-nav__item"><a href="{{ '/about' | prepend: site.baseurl }}"><i class="fa fa-fw fa-info-circle"></i>&nbsp;About</a></li>
-      <li class="home-nav__item"><a href="{{ '/blog' | prepend: site.baseurl }}"><i class="fa fa-fw fa-pencil-square-o"></i>&nbsp;Blog</a></li>
-      <li class="home-nav__item"><a href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fa fa-fw fa-github"></i>&nbsp;Github</a></li>
-      <li class="home-nav__item"><a href="http://codepen.io/{{ site.codepen_username }}" target="_blank"><i class="fa fa-fw fa-codepen"></i>&nbsp;CodePen</a></li>
-      <li class="home-nav__item"><a href="mailto:{{ site.email }}"><i class="fa fa-fw fa-envelope-o"></i>&nbsp;Contact</a></li>
-    </ul>
-  </nav>
-</div>
+
+<section class="background-slide"></section>
+<section class="home-content">
+	<div class="home-title">andyteki</div>
+	<nav class="home-nav">
+		<ul>
+			<li>
+				<a href="http://codepen.io/{{ site.codepen_username }}" target="_blank">CodePen</a>
+			</li>
+			<li>
+				<a href="https://github.com/{{ site.github_username }}" target="_blank">GitHub</a>
+			</li>
+			<li>
+				<a href="{{ '/blog' | prepend: site.baseurl }}">Blog</a>
+			</li>
+			<li>
+				<a href="{{ '/about' | prepend: site.baseurl }}">About</a>
+			</li>
+			<li>
+				<a href="mailto:{{ site.email }}">Contact</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="home-subtitle">哈囉，我來自地球。</div>
+</section>

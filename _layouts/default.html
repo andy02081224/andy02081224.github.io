@@ -8,12 +8,17 @@
       {% if page.title != 'Home' %}
         {% include header.html %}
       {% endif %}
-      
-      <div class="page-content">
-        <div class="wrapper">
-          {{ content }}
+
+      {% if page.title != 'Home' %}
+        <div class="page-content">
+          <div class="wrapper">
+            {{ content }}
+          </div>
         </div>
-      </div>
+      {% else %}
+        {{ content }}
+      {% endif %}
+      
 
       {% if page.title != 'Home' %}
         {% include footer.html %}

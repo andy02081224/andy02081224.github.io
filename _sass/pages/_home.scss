@@ -1,138 +1,66 @@
-@import url('//fonts.googleapis.com/css?family=Vollkorn');
-
-$fullscreen-bg-1: 'https://www.dropbox.com/s/5lqek9315s4bnii/moutain1-1080p.jpg?raw=1';
-
-$fullscreen-bg-2: 'https://www.dropbox.com/s/ojusm0xfckwagkp/pathway-1080p.jpg?raw=1';
-  
-$fullscreen-bg-3: 'https://www.dropbox.com/s/6eapbdeuh97g5cw/taipei1.jpg?raw=1';
-
-$fullscreen-backgrounds: $fullscreen-bg-1, $fullscreen-bg-2, $fullscreen-bg-3;
-
-$fullscreen-bg-length: length($fullscreen-backgrounds);
-
-$animation-duration: 30s;
-
-$animation-delay: $animation-duration / $fullscreen-bg-length;
-
-$animation-step: round($animation-delay / $animation-duration * 100%);
+.background-slide {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 50%;
+	background-color: skyblue;
+	background-image: url("https://www.dropbox.com/s/ojusm0xfckwagkp/pathway-1080p.jpg?raw=1");
+	background-size: cover;
+}
 
 .home-content {
-  font-family: 'Vollkorn', serif;
-  position: fixed;
-  min-width: 250px;
-  margin-left: 3vw;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 5;
-  padding: 3vh 1.5vw;
-  color: white;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(0,0,0,0.6),
-    rgba(0,0,0,0.8) 70%
-  );
-  font-size: 2rem;
-    
-    @media screen and (max-width: 450px) {
-      padding: 4vh 5vw;
-      margin: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 100%;
-      height: auto;
-    }
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 50%;
 }
 
 .home-title {
-  border-bottom: 1px solid white;
-  
-  &__main {
-    margin-bottom: 0;
-    line-height: 1.1;
-    font-size: 1.6em;
-  }
-  
-  &__sub {
-    font-size: 0.8em;
-    margin-top: 0;
-  }
+	font-size: 4rem;
+	color: white;
+	padding: 10px 25px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(#000, 0.45);
+}
+
+.home-subtitle {
+	font-size: 1.4rem;
+	position: absolute;
+	bottom: 20%;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .home-nav {
-  margin-top: 5vh;
-  font-size: 1.1em;
-  
-  > ul {
-    //display: inline-block;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  &__item {
-    padding: 8px 0;
+	font-size: 2rem;
+	text-align: center;
+	position: relative;
+	top: 40%;
 
-    &:hover, &:active {
-      background-color: darken(rgba(255,255,255,0.6), 50%);
-    }
+	> ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
 
-    > a {
-      color: inherit;
-      display: block;
-      text-decoration: none;
-    }
-  }
-}
+	li {
+		line-height: 1;
+		display: inline-block;
+		padding: 0 20px;
+	}
 
-.bg-slideshow {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  
-  &__image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    background-color: $peter-river-color;
-    background-image: url(#{$fullscreen-bg-1});
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    animation: slideshow-animation $animation-duration linear infinite;
-  }
-  
-  @for $i from 1 through $fullscreen-bg-length {
-    & > li:nth-child(#{$i}) &__image {
-      background-image: url(nth($fullscreen-backgrounds, $i));
-      animation-delay: $animation-delay * ($i - 1);
-    }
-  }
-}
+	a {
+		color: black;
+		text-decoration: none;
+	}
 
-@keyframes slideshow-animation {
-  0% {
-    opacity: 0;
-  }
-  #{$animation-step/2} {
-    opacity: 1;
-  }
-  #{$animation-step} {
-    opacity: 1;
-  }
-  #{$animation-step*1.5} {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+	a:hover {
+		color: darken($grey-color-light, 35%);
+	}
+
+	li:not(:last-child) {
+		border-right: 1px solid darken($grey-color-light, 30%);
+	}
 }
