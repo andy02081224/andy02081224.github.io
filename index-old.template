@@ -1,7 +1,3 @@
----
-layout: default
-title: Home
----
 <ul class="bg-slideshow">
   <li>
     <span class="bg-slideshow__image"></span>
