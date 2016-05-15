@@ -76,7 +76,9 @@ title: 師大英文寫作課程基礎班筆記Week1
 定義：一個獨立子句搭配一個或以上個附屬子句，附屬子句當中包含附屬連接詞(Subordinating Conjunctions)或關係代名詞(Relative Pronouns)，用來連接主要子句與附屬子句，常見的附屬連接詞如because, since, although, when, after等，常見的關代如that, who which。附屬子句根據句子在句中扮演的角色分為三種：名詞子句、形容詞子句以及副詞子句。
 
 公式：
+
 (附屬子句在前，獨立子句在後)附屬連接詞 + S + V, S + V
+
 (獨立子句在前，附屬子句在後)S + V 附屬連接詞 S + V
 
 範例：  
@@ -95,7 +97,9 @@ title: 師大英文寫作課程基礎班筆記Week1
 1. I really want to play the HTC Vive that is just released, but it’s out of my budget.
 
 I really want to play the HTC Vive => 第一個獨立子句
+
 that is just released => 附屬形容詞子句
+
 but it’s out of my budget => 第二個獨立子句
 
 
