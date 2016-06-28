@@ -2,7 +2,7 @@
 layout: post
 category: Programming
 published: true
-tags: [JavaScript, Node.js]
+tags: [JavaScript, Nodejs]
 title: 使用Apache Thrift：以Node.js為例
 ---
 
