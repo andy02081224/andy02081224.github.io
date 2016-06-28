@@ -3,7 +3,7 @@ layout: post
 category: Programming
 published: true
 tags: [JavaScript, Node.js]
-title: 在Node中使用Apache Thrift
+title: 使用Apache Thrift：以Node.js為例
 ---
 
 Thrift屬於遠端程序呼叫(RPC，Remote Procedure Call)的一種框架，透過IDL(Interface Description Language)語言去定義Client/Server之間的接口，並自動產生適用於各程式語言的介面，讓使用者毋須擔心客戶端與伺服器端之間的通訊問題，可以在支援的語言下快速開發相關應用，以下以官網的範例簡單說明開發流程，此篇為概述，如需更詳細的資料請參考[Thrift: The Missing Guide](https://diwakergupta.github.io/thrift-missing-guide/)。
