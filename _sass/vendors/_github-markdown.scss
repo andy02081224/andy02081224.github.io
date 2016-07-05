@@ -361,7 +361,8 @@
 
 .markdown-body ul,
 .markdown-body ol {
-  // padding-left: 2em;
+  list-style-position: inside;
+  padding-left: 10px;
 }
 
 .markdown-body ul ul,
@@ -370,6 +371,7 @@
 .markdown-body ol ul {
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: 26px;
 }
 
 .markdown-body li>p {
