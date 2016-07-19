@@ -3,7 +3,7 @@ layout: post
 category: Language
 published: true
 tags: [English]
-title: 師大英文寫作課程基礎班筆記Week1
+title: 師大寫作基礎班筆記Week1
 ---
 
 ## 主課程
