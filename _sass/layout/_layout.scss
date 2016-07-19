@@ -6,7 +6,8 @@ html {
 }
 
 body {
-  font-family: 'Noto Sans TCs', 'Noto Sans', sans-serif;
+  font-weight: 300;
+  font-family: 'Noto Sans TC', 'Noto Sans', sans-serif;
 }
 
 /* Site content */
@@ -301,7 +302,7 @@ $post-colors: (
     background-position: center center;
     background-size: cover;
     color: white;
-    font-size: 2rem;
+    font-size: 1.8rem;
 
     > header {
         padding: $spacing-unit / 2 $spacing-unit / 2;
@@ -399,7 +400,8 @@ $post-colors: (
 
 /* Individual post */
 .post.post--single {
-    font-size: 2rem;
+    font-size: 1.8rem;
+
     .post__header {
         margin-bottom: $spacing-unit;
     }
@@ -469,6 +471,10 @@ $post-colors: (
 
     &__next {
         float: right;
+    }
+
+    a {
+        color: inherit;
     }
 }
 

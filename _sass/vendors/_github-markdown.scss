@@ -23,7 +23,7 @@
 }
 
 .markdown-body strong {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .markdown-body h1 {
@@ -251,7 +251,7 @@
 .markdown-body h6 {
   margin-top: 1em;
   margin-bottom: 16px;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 1.4;
 }
 
@@ -370,7 +370,7 @@
 .markdown-body ol ol,
 .markdown-body ol ul {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   margin-left: 26px;
 }
 
@@ -387,7 +387,7 @@
   margin-top: 16px;
   font-size: 1em;
   font-style: italic;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .markdown-body dl dd {
@@ -410,7 +410,7 @@
 }
 
 .markdown-body table {
-  display: block;
+  // display: block;
   width: 100%;
   overflow: auto;
   word-break: normal;
@@ -418,7 +418,7 @@
 }
 
 .markdown-body table th {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .markdown-body table th,
@@ -576,7 +576,7 @@
 
 .markdown-body .pl-sr .pl-cce {
   color: #63a35c;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .markdown-body .pl-ml {
@@ -587,7 +587,7 @@
 .markdown-body .pl-mh .pl-en,
 .markdown-body .pl-ms {
   color: #1d3e81;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .markdown-body .pl-mq {
@@ -601,7 +601,7 @@
 
 .markdown-body .pl-mb {
   color: #333;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .markdown-body .pl-md {
@@ -616,7 +616,7 @@
 
 .markdown-body .pl-mdr {
   color: #795da3;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .markdown-body .pl-mo {
