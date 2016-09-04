@@ -28,11 +28,21 @@ setTimeout(() => {
 
 #### 單執行緒以及Call Stack
 
-在JavaScript當中使用Timer（`setTimeout, setInterval`），尤其是在時間間距較小的情況下，時常會發現他並不完全準確，其原因來自於JavaScript單執行緒的特性，所謂的單執行緒指的是JavaScript一次只能執行一個Execution Context（一個紀錄目前Function執行環境的物件），而為了記錄整個程式執行的狀況，在JavaScript Interpreter當中會有一個Stack（常被稱作Execution Context Stack或Call Stack）的資料結構專門用來儲存這些Execution Context，新的Execution Context會隨著Function呼叫被推至Stack的頂端，而那個在頂端的Execution Context就是所謂的Active Execution Context，也就是當前正在執行，也是唯一被執行的Context，Non-blocking的程式碼如timer在被推至Stack上之後即會交由另外的機制去處理、計算Timer上的時間，同時被pop掉，不會阻擋其他Execution Context的執行。
+在JavaScript當中使用Timer（`setTimeout, setInterval`），尤其是在時間間距較小的情況下，時常會發現他並不完全準確，其原因來自於JavaScript單執行緒的特性。
+
+所謂的單執行緒指的是JavaScript一次只能執行一個Execution Context（一個紀錄目前Function執行環境的物件），而為了記錄整個程式執行的狀況，在JavaScript Interpreter當中會有一個Stack（常被稱作Execution Context Stack或Call Stack）的資料結構專門用來儲存這些Execution Context。
+
+新的Execution Context會隨著Function呼叫被推至Stack的頂端，而那個在頂端的Execution Context就是所謂的Active Execution Context，也就是當前正在執行，也是唯一被執行的Context，Non-blocking的程式碼如timer在被推至Stack上之後即會交由另外的機制去處理、計算Timer上的時間，同時被pop掉，不會阻擋其他Execution Context的執行。
 
 #### Message Queue和Event Loop
 
-非同步程式碼在Call Stack上被pop之後仍然會有機制去持續觀察他的觸發條件，這裡的timer在預設的時間到達之後其處理函式(callback)會被放到一個叫做Message Queue (Message Queue、Task Queue名字很多...)的資料結構(First in, First Out)當中，JavaScript會有一個叫做Event Loop的機制持續去觀察Call Stack與Queue，當他觀察到Call Stack已經沒有任何正在執行的Execution Context，就會從Message Queue當中取出處理函式（在這邊就是timer的callback function），把它放到Call Stack上去處理，這就是會什麼timer在JavaScript當中未必會準確的原因，當我們定義的時間到了之後，其處理函式只是被放進Message Queue當中而非直接執行，如果這時Call Stack仍然還有執行的Execution Context或Message Queue當中在timer的處理函式之前還有其他還沒被執行的Callback function時，這個timer的處理函式能做的事就只有等，等到Call Stack空了、Message Queue中他排到第一，他才能被Event Loop放到Call Stack去執行，這也是為什麼`setTimeout(() => console.log('我未必會立即執行'), 0)`未必會立即執行的原因，而也有人運用這樣的特性讓JavaScript也有類似其他程式語言中wait()的功能。
+非同步程式碼在Call Stack上被pop之後仍然會有機制去持續觀察他的觸發條件，這裡的timer在預設的時間到達之後其處理函式(callback)會被放到一個叫做Message Queue (Message Queue、Task Queue名字很多...)的資料結構(First in, First Out)當中。
+
+JavaScript會有一個叫做Event Loop的機制持續去觀察Call Stack與Queue，當他觀察到Call Stack已經沒有任何正在執行的Execution Context，就會從Message Queue當中取出處理函式（在這邊就是timer的callback function），把它放到Call Stack上去處理。
+
+這就是會什麼timer在JavaScript當中未必會準確的原因，當我們定義的時間到了之後，其處理函式只是被放進Message Queue當中而非直接執行，如果這時Call Stack仍然還有執行的Execution Context或Message Queue當中在timer的處理函式之前還有其他還沒被執行的Callback function時，這個timer的處理函式能做的事就只有等，等到Call Stack空了、Message Queue中他排到第一，他才能被Event Loop放到Call Stack去執行。
+
+這也是為什麼`setTimeout(() => console.log('我未必會立即執行'), 0)`未必會立即執行的原因，而也有人運用這樣的特性讓JavaScript也有類似其他程式語言中wait()的功能。
 
 #### setTimeout與setInterval
 
