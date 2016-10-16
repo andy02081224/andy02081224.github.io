@@ -94,6 +94,8 @@ prose:
             # - "設計"
             
 # Custom data
+self_intro_link: 'http://slides.com/andy02081224/intro/fullscreen'
+resume_link: 'https://www.dropbox.com/s/y3iub959c5dbg10/%E5%B1%A5%E6%AD%B7_%E6%9C%80%E6%96%B0_Web%E7%89%88.pdf?raw=1'
 codepen_username: andy02081224
 github_username:  andy02081224
 homepage_title: Chen Yu

@@ -10,3 +10,5 @@ permalink: /about
 喜歡籃球、漫畫和無病呻吟
 
 擅長DDD (Deadline-Driven Development)
+
+更多：<a href="{{ site.resume_link }}" target="_blank">履歷</a>、<a href="{{ site.self_intro_link }}" target="_blank">個人簡介( 些微矯情，純廣告效果，請多包涵😑 )</a>
